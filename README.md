@@ -37,7 +37,6 @@ My first goal is show my abilities for companies. I've been working 2 years on g
 # Programming Paradigms
 
 ## Object Oriented Programming
-### Why didn't I prefer fairy tale
 
 ## Functional Programming
 
