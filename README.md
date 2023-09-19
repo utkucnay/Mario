@@ -2,6 +2,8 @@
 
 My first goal is show my abilities for companies. I've been working 2 years on game programming. I am studying myself for a T programmer. I think, engine programmers are should T type programmer because you built for codebase to everyone in company. Firstly I explained technology after that, I will tell where I used in Mario game.
 
+- [Game Programming Patterns](#game-programming-patterns)
+
 - [Programming Paradigms](#programming-paradigms)
     - [Object Oriented Programming](#object-oriented-programming)
     - [Functional Programming](#functional-programming)
@@ -30,7 +32,7 @@ My first goal is show my abilities for companies. I've been working 2 years on g
 
 - [AI Programming](#ai-programming)
 
-- [C++](#c)
+# Game Programming Patterns
 
 # Programming Paradigms
 
@@ -43,6 +45,7 @@ My first goal is show my abilities for companies. I've been working 2 years on g
 
 ## Data Oriented Programming
 ### Cache Efficiency
+
 ### Memory Fragment
 ### Entity Component System  
 
@@ -86,7 +89,3 @@ My first goal is show my abilities for companies. I've been working 2 years on g
 # Physics Engine
 ## Circle Collider
 ## AABB Collider
-
-# C++
-## Inline Functions
-## Traits
