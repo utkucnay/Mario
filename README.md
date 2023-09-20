@@ -2,6 +2,12 @@
 
 My first goal is show my abilities for companies. I've been working 2 years on game programming. I am studying myself for a T programmer. I think, engine programmers are should T type programmer because you built for codebase to everyone in company. Firstly I explained technology after that, I will tell where I used in Mario game.
 
+# Dependency
+- X11 (sudo apt install libx11-dev)
+- Open GL 4.6 (sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev)
+
+Compiler Flags: -lglut -lGLU -lGL -lX11
+
 - [Game Programming Patterns](#game-programming-patterns)
 
 - [Programming Paradigms](#programming-paradigms)
@@ -46,7 +52,7 @@ My first goal is show my abilities for companies. I've been working 2 years on g
 ### Cache Efficiency
 
 ### Memory Fragment
-### Entity Component System  
+### Entity Component System
 
 # Graphics Programming
 ## Memory Layout
