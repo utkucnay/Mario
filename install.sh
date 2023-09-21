@@ -9,4 +9,5 @@ else
 fi
 
 echo "Compiling..."
+mkdir ./.out
 make

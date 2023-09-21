@@ -1,9 +1,9 @@
-#include<X11/X.h>
-#include<X11/Xlib.h>
-#include<GL/gl.h>
-#include<GL/glx.h>
-#include<GL/glu.h>
-#include <X11/Xutil.h>
+#pragma once
+
+#include <X11/X.h>
+
+#include "window/LinuxDisplay.h"
+class LinuxDisplay;
 
 class LinuxWindow {
 public:
@@ -11,22 +11,16 @@ public:
     LinuxWindow(const LinuxWindow &)            = delete;
     LinuxWindow &operator=(LinuxWindow &&)      = delete;
     LinuxWindow &operator=(const LinuxWindow &) = delete;
-    LinuxWindow();
+    LinuxWindow(Window window, LinuxDisplay* linuxDisplay);
     ~LinuxWindow();
 
 public:
-    void CreateWindow(int height, int widthsss);
-    void ConnectGL(void);
+    void glMakeCurrent();
+    void glSwapBuffers();
 
 public:
-    Display*    m_display;
-    Window      m_window;
+    Window          _Window;
 private:
-    Window      m_rootWindow;
-    GLint       m_att[5] = { GLX_RGBA, GLX_DEPTH_SIZE, 24, GLX_DOUBLEBUFFER, None };
-    XVisualInfo* m_xVisualInfo;
-    Colormap    m_colorMap;
-    XSetWindowAttributes    m_swa;
-    GLXContext  m_glxContext;
-    XWindowAttributes m_windowAtr;
+    LinuxDisplay*    m_linuxDisplay;
+    friend class LinuxDisplay;
 };
