@@ -1,4 +1,4 @@
-#include "window/LinuxWindow.h"
+#include "Window/LinuxWindow.h"
 
 LinuxWindow::LinuxWindow(Window window, LinuxDisplay* linuxDisplay) {
     _Window = window;

@@ -1,5 +1,5 @@
-#include "application.h"
-#include <GL/gl.h>
+#include "Application.h"
+#include "OpenGL/GLAD/glad.h"
 #include <X11/Xlib.h>
 
 Application::Application() {

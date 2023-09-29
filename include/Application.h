@@ -1,7 +1,7 @@
 #pragma once
 
-#include "window/LinuxDisplay.h"
-#include "window/LinuxWindow.h"
+#include "Window/LinuxDisplay.h"
+#include "Window/LinuxWindow.h"
 
 class Application {
 public:

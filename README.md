@@ -11,18 +11,24 @@ I prepare technical document for the project.
 - WASD / Arrow Keys     - Move
 - Space                 - Jump
 - ESC                   - Quit
+- Space                 - Fire
 
 # Dependency
 - X11
-- Open GL 4.6 (nearly all computer have the version, in my opinion)
+- Open GL 4.6
 - Linux
 
 # Roadmap
-- X11 Window Create Ongoing
-    - Depracted Display and Window
-    - Abstract X11 for the codebase
-- X11 Event Handle System Ongoing
-- OpenGL Function Export Ongoing
+- X11 Window Create                     Done
+    - Depracted Display and Window      Done
+    - Abstract X11 for the codebase     Done
+- X11 Event Handle System               Ongoing
+- OpenGL Function Export                Done
+- Custom Allocater
+    - Block
+    - Stack
+    - Scratch
+- Custom Container
 - Rendering System
 - ECS
 - 2D Physics Engine

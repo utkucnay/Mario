@@ -1,4 +1,4 @@
-#include "window/LinuxDisplay.h"
+#include "Window/LinuxDisplay.h"
 
 GLint       att[5] = { GLX_RGBA, GLX_DEPTH_SIZE, 24, GLX_DOUBLEBUFFER, None };
 
@@ -7,6 +7,12 @@ LinuxDisplay::LinuxDisplay() {
 
     if (_display == NULL) {
         printf("Dont init Display\n");
+    }
+
+    int screen = DefaultScreen(_display);
+
+    if(gladLoadGLX(_display, screen)) {
+        printf("error");
     }
 
     _rootWindow = DefaultRootWindow(_display);
@@ -20,6 +26,7 @@ LinuxDisplay::LinuxDisplay() {
             m_xVI->visual, AllocNone);
 
     _glxContext = glXCreateContext(_display, m_xVI, NULL, GL_TRUE);
+
 }
 
 LinuxDisplay::~LinuxDisplay() {
@@ -50,5 +57,13 @@ LinuxWindow* LinuxDisplay::CreateWindow(unsigned int width,
     XStoreName(_display, window, name.c_str());
 
     LinuxWindow* lWindow = new LinuxWindow(window, this);
+
+    lWindow->glMakeCurrent();
+
+    int gl_version = gladLoadGL();
+    if (!gl_version) {
+        printf("Unable to load GL.\n");
+    }
+
     return lWindow;
 }

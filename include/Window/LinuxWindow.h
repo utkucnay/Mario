@@ -1,8 +1,7 @@
 #pragma once
 
-#include <X11/X.h>
+#include "Window/LinuxDisplay.h"
 
-#include "window/LinuxDisplay.h"
 class LinuxDisplay;
 
 class LinuxWindow {
